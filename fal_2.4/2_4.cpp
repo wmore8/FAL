@@ -24,8 +24,14 @@ using namespace std;
     Función de Cota: t(ini, fin) = fin - ini
 
     Ecuacion de recurrencia:
-      - Caso base: T(n) = O(1) si n = 1
-      - Caso recursivo: T(n) = O(1) + T(n/2) si n > 1
+
+     busquedaIz:
+    - Caso base: T(n) = O(1) si i = |v|
+    - Caso recursivo: T(n) = O(1) + T(n-1) si i < |v|
+
+    busquedaDr:
+    - Caso base: T(n) = O(1) si i = -1
+    - Caso recursivo: T(n) = O(1) + T(n-1) si i ≥ 0
 
     Coste: O(n) -> lineal porue en el caso peor se resuelve todo el vector (hasta 2 veces)
 
